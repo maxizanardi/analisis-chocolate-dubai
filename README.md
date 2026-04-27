@@ -87,7 +87,7 @@ for nombre_columna, query in conceptos.items():
 
 Vista previa de los archivos tipo .CSV generados:
 
-![](images/dataset-trend-python.png)
+<img src="images/dataset-trend-python.png" width="500">
 
  3- PRECIOS HISTÓRICOS
 Este dataset fue creado para reunir los precios históricos de nuestras tres variables importantes: chocolate Dubai, pistacho y masa kataifi. Lo que buscamos aquí es ver como evolucionó en el tiempo los precios que afectan directamente a la tableta de chocolate “estilo Dubai” y si puede haber una inferencia con los datos que ya obtuvimos en las capas anteriores, fechas de lanzamiento y fuerzas de tendencia. Los precios de los productos que buscamos fueron: cacao, pistacho, masa kataifi.
