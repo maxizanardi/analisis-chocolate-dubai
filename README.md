@@ -33,7 +33,7 @@ En definitiva, se aporta una herramienta que permite ver con más claridad si af
 ### VIDEO DE PRESENTACIÓN
 En este video explico qué problemas puede resolver este análisis, cómo se puede aplicar en un entorno real y el valor que puede aportar a una empresa.
 
-[Ver video](https://youtu.be/_vTFk5qUd5A)
+[Ver video](https://youtube.com/shorts/vGojHpB6ORU?feature=share)
 
 ### CONTEXTO
 El chocolate Dubai, ¿una moda o un sabor que supo imponerse en el mercado?. Como amante del chocolate, y observador de cómo se mueve el mundo,  me fui dando cuenta que cada vez este nuevo concepto estaba filtrándose en distintos productos y marcas, lo cual llevó a preguntarme si esto era una moda o algo que vino para quedarse. 
@@ -384,7 +384,7 @@ Por último, se presenta la vista móvil preparada para la primera página “Re
 
 Se recomienda visualizar el video para ver el informe en funcionamiento en Power BI Service, incluyendo la versión completa y la vista móvil.
 
-[Ver video](https://youtube.com/shorts/vGojHpB6ORU?feature=share)
+[Ver video](https://youtu.be/_vTFk5qUd5A)
 
 ### CONCLUSIONES
 
