@@ -200,7 +200,7 @@ Fórmula DAX: Calendario = CALENDAR(MIN('chocolate_dubai_tabla_final'[fecha]), M
 ![](images/power-bi-modelado.png)
 
 Administración de relaciones:
-![](images/power-bi-administracion-relacion.png)
+![](images/power-bi-administracion-relaciones.png)
 
 Mapa de modelado ya realizado:
 ![](images/power-bi-mapa-modelado-realizado.png)
