@@ -345,11 +345,11 @@ VISTA MÓVIL
 
 Por último, se presenta la vista móvil preparada para la primera página “Resumen ejecutivo”.
 
-<img src="images/power-bi-informe-movil-1.png" width="500">
+<img src="images/power-bi-informe-movil-1.png" width="300">
 
-<img src="images/power-bi-informe-movil-2.png" width="500">
+<img src="images/power-bi-informe-movil-2.png" width="300">
 
-<img src="images/power-bi-informe-movil-3.png" width="500">
+<img src="images/power-bi-informe-movil-3.png" width="300">
 
 Se recomienda ver el video adjunto para ver en funcionamiento como registro vivo al documento de Power BI Service, tanto el informe comleto como la vista movil.
 
