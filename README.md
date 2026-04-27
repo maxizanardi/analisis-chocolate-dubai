@@ -51,6 +51,10 @@ La pregunta de negocio que buscamos responder es:
 ##### DATASET
 Una vez que teníamos la base de lo que estábamos buscando y la pregunta de negocio a responder, llegamos al punto de que datos íbamos a reunir para esta investigación. Para desarrollar esto y llevarlo adelante lo dividimos en tres capas o tres grupos.
 
+**Nota sobre fuentes de datos:**
+
+Las fuentes utilizadas para la construcción de los datasets se encuentran detalladas dentro de cada archivo en la carpeta `/data`, donde se incluye una columna específica de referencia para cada registro.
+
 
 ###### 1- MARCAS SELECCIONADAS
 
@@ -424,7 +428,7 @@ Las herramientas utilizadas para desarrollar este trabajo fueron:
 - Herramientas IA Generativa: se utilizó Chat GPT, Gemini y Perplexity para formular scripts de codificación de Python y codificación y estructuración de SQL. También en el apoyo de la construcción del proyecto en general tanto en recopilación como en análisis, manteniendo la idea original y criterios  propios y humanos. El proyecto se fundó bajo las ideas y esencia del fundador, utilizando la IA para llevarlo a cabo.
 
 ### REFERENCIAS
-- https://es.wikipedia.org/wiki/Chocolate_Dub%C3%A1i
-- https://www.ine.es/jaxiT3/Datos.htm?t=61671
-- https://officialfixdessertchocolatier.com/blogs/news/the-freakin-incredible-xperience-the-story-behind-the-global-fix-obsession
-- https://officialfixdessertchocolatier.com/blogs/news/the-complete-science-behind-why-dubai-chocolate-went-viral
+- [Wikipedia – Chocolate Dubái](https://es.wikipedia.org/wiki/Chocolate_Dub%C3%A1i)
+- [INE - Índices de Precios Industriales. IPRI+IPRIX. Base 2021](https://www.ine.es/jaxiT3/Datos.htm?t=61671)
+- [About Us: The Story of FIX Dessert Chocolatier](https://officialfixdessertchocolatier.com/blogs/news/the-freakin-incredible-xperience-the-story-behind-the-global-fix-obsession)
+- [The Complete Science Behind Why Dubai Chocolate Went Viral](https://officialfixdessertchocolatier.com/blogs/news/the-complete-science-behind-why-dubai-chocolate-went-viral)
