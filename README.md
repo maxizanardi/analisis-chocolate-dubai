@@ -53,7 +53,7 @@ Una vez que teníamos la base de lo que estábamos buscando y la pregunta de neg
 
 **Nota sobre fuentes de datos:**
 
-Las fuentes utilizadas para la construcción de los datasets se encuentran detalladas dentro de cada archivo en la carpeta `/data`, donde se incluye una columna específica de referencia para cada registro.
+Las fuentes utilizadas para la construcción de los datasets se encuentran detalladas dentro de cada archivo en la [carpeta /data](./data), donde se incluye una columna específica de referencia para cada registro.
 
 
 ###### 1- MARCAS SELECCIONADAS
