@@ -2,6 +2,7 @@
 
 ## ¿Es una tendencia real o solo un fenómeno viral?
 
+
 ## Índice
 
 - [VALOR E IMPACTO LOGRADO](#VALOR-E-IMPACTO-LOGRADO)
