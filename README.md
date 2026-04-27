@@ -2,30 +2,56 @@
 
 ## ¿Es una tendencia real o solo un fenómeno viral?
 
-## VALOR E IMPACTO LOGRADO
+## Índice
+
+- [VALOR E IMPACTO LOGRADO](###VALOR-E-IMPACTO-LOGRADO)
+- [VIDEO DE PRESENTACIÓN](###VIDEO-DE-PRESENTACIÓN)
+- [CONTEXTO](###CONTEXTO)
+- [OBJETIVO](###OBJETIVO)
+- [PROCESOS](###PROCESOS)
+  - [DATASET](####DATASET)
+    - [MARCAS SELECCIONADAS](#####MARCAS-SELECCIONADAS)
+    - [TRENDS MENSUAL Y SEMANAL](#####TRENDS-MENSUAL-Y-SEMANAL)
+    - [PRECIOS HISTÓRICOS](#####PRECIOS-HISTÓRICOS)
+  - [SQL - BIGQUERY](####SQL---BIGQUERY)
+  - [POWER BI DESKTOP](####POWER-BI-DESKTOP)
+    - [MODELADO](#####MODELADO)
+    - [NORMALIZACIÓN DE DATOS](#####NORMALIZACIÓN-DE-DATOS)
+    - [DAX](#####DAX)
+  - [POWER BI SERVICE](####POWER-BI-SERVICE)
+- [CONCLUSIONES](###CONCLUSIONES)
+- [RECOMENDACIONES DE ESTRATEGIAS](###RECOMENDACIONES-DE-ESTRATEGIAS)
+- [VISIÓN DE MEJORAS](###VISIÓN-DE-MEJORAS)
+- [HERRAMIENTAS UTILIZADAS](###HERRAMIENTAS-UTILIZADAS)
+- [REFERENCIAS](###REFERENCIAS)     
+
+### VALOR E IMPACTO LOGRADO
 Este proyecto arroja como resultado que cualquier marca pueda decidir en base al contenido sus próximos objetivos y tomar decisiones convincentes para entrar al mercado del chocolate “estilo Dubai”, calculando su propio margen de beneficio real teniendo un 73% promedio de sobreprecio. Además, tener en cuenta los precios a lo largo de los últimos años de productos como el cacao, pistacho y masa kataifi.
 En definitiva, se aporta una herramienta que permite ver con más claridad si afrontar riesgos en base a lo que se conoce y se analizó  sobre este fenómeno.
 
-## VIDEO DE PRESENTACIÓN
+### VIDEO DE PRESENTACIÓN
+En este video explico qué problemas puede resolver este análisis, cómo se puede aplicar en un entorno real y el valor que puede aportar a una empresa.
 
+[Ver video](LINK_ACÁ)
 
-## CONTEXTO
+### CONTEXTO
 El chocolate Dubai, ¿una moda o un sabor que supo imponerse en el mercado?. Como amante del chocolate, y observador de cómo se mueve el mundo,  me fui dando cuenta que cada vez este nuevo concepto estaba filtrándose en distintos productos y marcas, lo cual llevó a preguntarme si esto era una moda o algo que vino para quedarse. 
 Para contextualizar un poco hay que entender que es el chocolate Dubai: es una una barra de chocolate que contiene una mezcla de masa kataifi tostada (esto le da un estilo crocante) y pasta de pistachos. Fue creado en 2021 por una chocolatería emiratí en Dubai. En el 2024 se hizo muy popular en redes sociales mostrado por influencers, especialmente en Tik Tok, desde entonces varias marcas han aprovechado a introducirlo como una línea más entre sus productos que ofrecen al mercado. 
 Este proyecto trata de esto, analizar hasta dónde llega el fenómeno “estilo Dubai” y si es conveniente que las marcas sigan añadiendolo a sus producciones o por que lo hacen.
 
-## OBJETIVO
+### OBJETIVO
 Para poder investigar y analizar y poder tener conclusiones coherentes y ejecutables tuve que recortar y granularizar el objetivo, para poder hacerlo medible y analizable. Para esto lo que se hizo fue enfocarme en solo en barras de chocolates que lleguen al consumidor final y que tengan una versión clásica y una versión estilo Dubai. Además tienen que ser vendidas en España, y tener acceso a la información que queramos estudiar sobre dichas marcas.
 El proyecto se comienza desde mucho antes que la recolección de datos, desde el pensamiento de cómo entender este fenómeno y cómo afecta al mercado, todo el trabajo se realizó desde la construcción y recolección propia utilizando fuentes que fueran de lo más fiables posible, nunca se accedió a un dataset público ni proyecto pre armado.
 La pregunta de negocio que buscamos responder es: 
 ¿Qué elementos o factores podrían estar influyendo para que distintas marcas de productos alimenticios lancen al mercado su versión "estilo Dubai"?.
 
-## PROCESOS
-### DATASET
+### PROCESOS
+
+##### DATASET
 Una vez que teníamos la base de lo que estábamos buscando y la pregunta de negocio a responder, llegamos al punto de que datos íbamos a reunir para esta investigación. Para desarrollar esto y llevarlo adelante lo dividimos en tres capas o tres grupos.
 
 
-#### 1- MARCAS SELECCIONADAS
+###### 1- MARCAS SELECCIONADAS
 
 ![](images/dataset-marcas-1.png)
 
@@ -64,7 +90,7 @@ Archivo final tipo .CSV:
 
 ![](images/dataset-marcas-limpio.png)
 
-#### 2- TRENDS MENSUAL Y SEMANAL
+###### 2- TRENDS MENSUAL Y SEMANAL
 La segunda capa de datos que se reunió fue la tendencia que tenía el “chocolate Dubai” por medio de Google Trends. Para esto se intentó capturar la fuerza de tendencia por medio de un script de Python en Google Colab con tres variables claves: chocolate Dubai, pistacho y masa kataifi. A cada variable se le adjunto un conjunto de palabras claves que se relacionaban con cada una de ellas. Con esto lo que se buscaba era ver la fuerza de tendencia por cada grupo a través del tiempo y encontrar patrones o relaciones con los lanzamientos de cada marca de su versión Dubai.
 Se realizaron dos conjuntos de datos iguales pero con una pequeña variación, conjunto de datos agrupado por fecha semanal y conjunto de datos agrupados por fecha mensual. El primero es porque este nos permite ver más en detalle cómo varía la tendencia a través del tiempo nos permite construir gráficos con una granularidad más exquisita, el segundo porque necesitábamos también unirlos y entrelazarlos con las demás capas de datos y todos poseían o estaban agrupados en fecha mensual permitiendo asi un facil entendimiento entre ellos.
 Ambos conjuntos de datos se guardaron en un archivo tipo .CSV que se utilizó para un posterior análisis.
@@ -89,7 +115,7 @@ Vista previa de los archivos tipo .CSV generados:
 
 <img src="images/dataset-trend-python.png" width="500">
 
- 3- PRECIOS HISTÓRICOS
+###### 3- PRECIOS HISTÓRICOS
 Este dataset fue creado para reunir los precios históricos de nuestras tres variables importantes: chocolate Dubai, pistacho y masa kataifi. Lo que buscamos aquí es ver como evolucionó en el tiempo los precios que afectan directamente a la tableta de chocolate “estilo Dubai” y si puede haber una inferencia con los datos que ya obtuvimos en las capas anteriores, fechas de lanzamiento y fuerzas de tendencia. Los precios de los productos que buscamos fueron: cacao, pistacho, masa kataifi.
 
 Vista parcial del dataset:
@@ -132,7 +158,7 @@ Vista parcial del dataset final, limpio para su posterior análisis:
 
 ![](images/dataset-precios-historicos-final.png)
 
-### SQL - BIGQUERY
+#### SQL - BIGQUERY
 Luego de tener los 4 archivos limpios para utilizar (capa 1: Mercado_Chocolate_Dubai_Limpio.csv, capa 2: trends_chocolate_dubai_semanal.csv y trends_chocolate_dubai_mensual.csv, capa 3: Dataset_Precios_Historicos_Limpio.csv) lo que se hizo pasar por segundo proceso de ETL donde se refinaron temas de limpieza y uniones.
 
 Empezamos creando el proyecto denominado “analisis-chocolate-dubai”, donde creamos el conjunto de datos denominado “chocolate-dubai” y dentro de él creamos 3 tablas, denominadas “dataset-precios-historicos”, “mercado-chocolate-dubai” y “trends-chocolate-dubai-mensual”.
@@ -198,7 +224,7 @@ Capturas de pantalla de la tabla final denominada “chocolate-dubai-tabla-final
 
 ![](images/sql-tabla-final-vistaprevia-2.png)
 
-### POWER BI DESKTOP
+#### POWER BI DESKTOP
 
 La tarea siguiente fue crear un archivo de Power BI Desktop llamado “analisis_chocolate_dubai” en el cual vamos a trabajar para hacer nuestro análisis y poder sacar las conclusiones que nos muestran los datos.
 Lo primero es cargar los archivos que vamos a utilizar. Empezamos conectándonos a Bigquery para cargar nuestra tabla resultante de la unión mostrada anteriormente.
@@ -215,7 +241,7 @@ Luego, vamos a cargar dos archivos más, nuestro trends semanal y el archivo cre
 
 El archivo semanal, como hemos explicado anteriormente, lo necesitamos ya que muestra la fuerza de tendencia de una manera más detallada y con mayor granularidad que el archivo en formato mensual. El archivo denominado “Mercadp_Chocolate_Dubai_Limpio” lo necesitamos nuevamente ya que como sabemos contiene las 5 marcas de tabletas de chocolate Dubai que están en el archivo SQL, pero también contiene la comparativa de su misma marca pero una versión de tableta clásica. Estas quedaron fuera de la tabla final hecha en SQL ya que por un tema de estructura se eligió no subirlas al no poseer una fecha de referencia, en cambio, se optó por subirlas como otra tabla a Power BI Desktop.
 
-#### MODELADO
+##### MODELADO
 
 Se hizo un trabajo de relación de tablas para conectarlas formando un modelo estrella. Antes de ir a administrar relaciones, se utilizó una fórmula DAX para crear una tabla de calendario.
 Fórmula DAX: Calendario = CALENDAR(MIN('chocolate_dubai_tabla_final'[fecha]), MAX('chocolate_dubai_tabla_final'[fecha]))
@@ -235,7 +261,7 @@ Las tablas de hechos son: chocolate_dubai_tabla_final, Mercado_Chocolate_Dubai_L
 La tabla de dimensión es: Calendario.
 Este tipo de esquema (constelación o galaxia) se da al tener más de una tabla de hechos. 
 
-#### NORMALIZACIÓN DE DATOS
+##### NORMALIZACIÓN DE DATOS
 Se estandarizaron las columnas de fecha (DD/MM/AAAA) y moneda (€) para asegurar la legibilidad del reporte y la consistencia entre fuentes de datos (BigQuery, CSV y Google Trends).
 Se trabajó en las mejoras de calidad de los tipos de datos ajustando los mismos (Enteros para índices, Decimales para pesos y porcentajes), para optimizar el rendimiento del motor de Power BI y evitar errores de redondeo en los cálculos.
 Se adjunta capturas de pantalla de solo una tabla como muestra del resultado.
@@ -244,7 +270,7 @@ Se adjunta capturas de pantalla de solo una tabla como muestra del resultado.
 
 ![](images/power-bi-normalizacion-2.png)
 
-#### DAX
+##### DAX
 
 En esta sección procedemos a mostrar todas las fórmulas dax utilizadas a lo largo de nuestro análisis.
 
@@ -313,7 +339,7 @@ La usamos en dos visualizaciones, la primera en una tarjeta que calcula el prome
 
 <img src="images/power-bi-dax-sobreprecio.png" width="500">
 
-### POWER BI SERVICE
+#### POWER BI SERVICE
 
 A continuación mostraremos todas las páginas del informe el cual fue hecho en Power BI Desktop y compartido en Power BI Service.
 
@@ -351,9 +377,11 @@ Por último, se presenta la vista móvil preparada para la primera página “Re
 
 <img src="images/power-bi-informe-movil-3.png" width="300">
 
-Se recomienda ver el video adjunto para ver en funcionamiento como registro vivo al documento de Power BI Service, tanto el informe comleto como la vista movil.
+Se recomienda visualizar el video para ver el informe en funcionamiento en Power BI Service, incluyendo la versión completa y la vista móvil.
 
-## CONCLUSIONES
+[Ver video](LINK_ACÁ)
+
+### CONCLUSIONES
 
 Luego de haber recorrido todo el proyecto es momento de detallar una serie de conclusiones que se pudieron obtener a partir del análisis realizado. 
 
@@ -371,20 +399,20 @@ Volviendo al inicio del proyecto y citando nuevamente la pregunta de negocio, ¿
 Podemos concluir que las marcas de chocolates y demás productos dulces al ver esta ola se subieron al fenómeno y poder así obtener su tajada del mercado.
 Cabe recalcar que durante la investigación se observaron distintos productos, los cuales no eran tabletas de chocolates, pero si lanzaron al mercado su versión Dubai. Al observar sus ingredientes nos damos cuenta que se alejan de la receta original, pero de todas formas logran posicionarse y tener una porción del mercado gracias a lo que genera en el consumidor elegir lo que todo el mundo consume en estos momentos, versión “estilo Dubai”.
 
-## RECOMENDACIONES DE ESTRATEGIAS
+### RECOMENDACIONES DE ESTRATEGIAS
 - Monitoreo de Variables Críticas: Mantener un seguimiento constante entre la volatilidad de los precios de materias primas (cacao, pistacho y masa kataifi) y la fuerza de la tendencia en búsquedas para anticipar caídas de interés.
 - Blindaje de Calidad: Priorizar la excelencia del producto final. En un mercado de sobreprecio, la calidad es lo único que justifica la fidelidad del cliente una vez que el fenómeno viral disminuye.
 - Viralidad Estratégica: Apalancarse en la narrativa de redes sociales que originó el fenómeno, utilizando el mismo lenguaje visual y rapidez de respuesta que los creadores de contenido.
 - Gestión de la Incertidumbre de Mercado: Dado que no se puede predecir la duración exacta de la tendencia, se recomienda una gestión de recursos flexible. El objetivo es mantener una estructura de producción que permita escalar si la demanda se mantiene o pivotar rápidamente si el mercado satura, evitando comprometer la operatividad total en una sola apuesta.
 
 
-## VISIÓN DE MEJORAS
+### VISIÓN DE MEJORAS
 Al concluir el proyecto me gustaría agregar un auto feedback o visión de mejoras. Mi intención no es cambiar el proyecto sino pensar cómo se podría mejorar en todo su desarrollo, es por eso que dejo algunos puntos claves a continuación.
 - Mejora de la parte técnica, hablamos de una herramienta que permite simular cambios en precios de productos de materia prima para ver y analizar cómo impacta en el producto final. Esto abre un abanico de posibilidades y requiere reunir más información para analizar otros puntos de vista.
 - Mejora en el flujo de trabajo, me refiero a la automatización de tareas sin descargar y cargar tantos archivos tipo .CSV en distintas plataformas o herramientas y que el flujo de trabajo sea más dinámico y automatizado.
 - Mejora en la metodología de trabajo, esto es aplicable al marco de trabajo. Compaginar mis habilidades técnicas con las de Scrum master y operar bajo un marco Agile para desarrollar en tiempo y forma el proyecto, tomando las precauciones necesarias, desarrollando sprint durante el tiempo, establecer objetivos y metas alcanzables y evaluar el proceso. Estamos hablando de cómo potenciar las habilidades de uno mismo y sacarle el máximo rendimiento posible bajo un entorno aplicable y funcional, donde permite entregar un producto a un cliente de forma satisfactoria y trabajar de una forma ordenada y prolija en un marco de contención medido y accionable.
 
-## HERRAMIENTAS UTILIZADAS
+### HERRAMIENTAS UTILIZADAS
 Las herramientas utilizadas para desarrollar este trabajo fueron:
 
 - Google Sheets
@@ -394,7 +422,7 @@ Las herramientas utilizadas para desarrollar este trabajo fueron:
 - Power BI Service
 - Herramientas IA Generativa: se utilizó Chat GPT, Gemini y Perplexity para formular scripts de codificación de Python y codificación y estructuración de SQL. También en el apoyo de la construcción del proyecto en general tanto en recopilación como en análisis, manteniendo la idea original y criterios  propios y humanos. El proyecto se fundó bajo las ideas y esencia del fundador, utilizando la IA para llevarlo a cabo.
 
-## REFERENCIAS
+### REFERENCIAS
 - https://es.wikipedia.org/wiki/Chocolate_Dub%C3%A1i
 - https://www.ine.es/jaxiT3/Datos.htm?t=61671
 - https://officialfixdessertchocolatier.com/blogs/news/the-freakin-incredible-xperience-the-story-behind-the-global-fix-obsession
