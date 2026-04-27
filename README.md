@@ -311,7 +311,7 @@ DIVIDE(_PrecioDubai - _PrecioClasico, _PrecioClasico)
 
 La usamos en dos visualizaciones, la primera en una tarjeta que calcula el promedio general de las cinco marcas y la segunda, en una tabla con el sobreprecio calculado para cada marca.
 
-![](images/power-bi-dax-sobreprecio.png)
+<img src="images/power-bi-dax-sobreprecio.png" width="500">
 
 ### POWER BI SERVICE
 
@@ -345,11 +345,11 @@ VISTA MÓVIL
 
 Por último, se presenta la vista móvil preparada para la primera página “Resumen ejecutivo”.
 
-![](images/power-bi-informe-movil-1.png)
+<img src="images/power-bi-informe-movil-1.png" width="500">
 
-![](images/power-bi-informe-movil-2.png)
+<img src="images/power-bi-informe-movil-2.png" width="500">
 
-![](images/power-bi-informe-movil-3.png)
+<img src="images/power-bi-informe-movil-3.png" width="500">
 
 Se recomienda ver el video adjunto para ver en funcionamiento como registro vivo al documento de Power BI Service, tanto el informe comleto como la vista movil.
 
