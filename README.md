@@ -287,7 +287,7 @@ Masa kataifi:
 
 Resultado:
 
-![](images/power-bi-dax-variacion-1.png)
+<img src="images/power-bi-dax-variacion-1.png" width="500">
 
 Por medio de un slicer podemos deslizarnos a la semana que queramos observar y ver la variación porcentual con respecto a la semana anterior.
 
