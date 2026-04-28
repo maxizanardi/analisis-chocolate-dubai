@@ -38,10 +38,10 @@ En este video explico qué problemas puede resolver este análisis, cómo se pue
 ### CONTEXTO
 El chocolate Dubai, ¿una moda o un sabor que supo imponerse en el mercado?. Como amante del chocolate, y observador de cómo se mueve el mundo,  me fui dando cuenta que cada vez este nuevo concepto estaba filtrándose en distintos productos y marcas, lo cual llevó a preguntarme si esto era una moda o algo que vino para quedarse. 
 Para contextualizar un poco hay que entender que es el chocolate Dubai: es una una barra de chocolate que contiene una mezcla de masa kataifi tostada (esto le da un estilo crocante) y pasta de pistachos. Fue creado en 2021 por una chocolatería emiratí en Dubai. En el 2024 se hizo muy popular en redes sociales mostrado por influencers, especialmente en Tik Tok, desde entonces varias marcas han aprovechado a introducirlo como una línea más entre sus productos que ofrecen al mercado. 
-Este proyecto trata de esto, analizar hasta dónde llega el fenómeno “estilo Dubai” y si es conveniente que las marcas sigan añadiendolo a sus producciones o por que lo hacen.
+Este proyecto trata de esto, analizar hasta dónde llega el fenómeno “estilo Dubai” y si es conveniente que las marcas sigan añadiendolo a sus producciones o por qué lo hacen.
 
 ### OBJETIVO
-Para poder investigar y analizar y poder tener conclusiones coherentes y ejecutables tuve que recortar y granularizar el objetivo, para poder hacerlo medible y analizable. Para esto lo que se hizo fue enfocarme en solo en barras de chocolates que lleguen al consumidor final y que tengan una versión clásica y una versión estilo Dubai. Además tienen que ser vendidas en España, y tener acceso a la información que queramos estudiar sobre dichas marcas.
+Para investigar, analizar y obtener conclusiones coherentes y ejecutables tuve que recortar y granularizar el objetivo, buscando hacerlo medible y analizable. Lo que hice fue enfocarme en solo en barras de chocolates que lleguen al consumidor final, tengan una versión clásica y una versión estilo Dubai. Además tienen que ser vendidas en España, y tener acceso a la información que queramos estudiar sobre dichas marcas.
 El proyecto se comienza desde mucho antes que la recolección de datos, desde el pensamiento de cómo entender este fenómeno y cómo afecta al mercado, todo el trabajo se realizó desde la construcción y recolección propia utilizando fuentes que fueran de lo más fiables posible, nunca se accedió a un dataset público ni proyecto pre armado.
 La pregunta de negocio que buscamos responder es: 
 ¿Qué elementos o factores podrían estar influyendo para que distintas marcas de productos alimenticios lancen al mercado su versión "estilo Dubai"?.
@@ -67,16 +67,16 @@ En este dataset lo que se hizo fue reunir 5 marcas de distintos sitios elegidos 
 
 CRITERIOS Y PASOS A TENER EN CUENTA
 
-- Lindt tiene fecha de lanzamiento en diciembre 2024 pero se reelanzo el mismo producto junto a mas versiones (chocoalte negro y chocoalte blanco) en febrero 2026
-- En todas las marcas las versiones que utilice como clásica se trato de elegir una versión que tenga la similitud más próxima a la versión dubai en cuanto a misma marca y mismo packaging, dentro de estos parámetros opte por la versión más clásica de todas las posibles y que sea de leche esta versión clásica.
-- Hacendado tiene un lanzamiento en mayo 2025, pero es otra version de chocolate blanco que la descontinuaron o la relanzaron cambiando el fabricante y salió en febrero del 2026, tomo esta fecha como aproximación de detección de mercado ya que es el producto que hace referencia en mi dataset.
+- Lindt tiene fecha de lanzamiento en diciembre 2024 pero se reelanzo el mismo producto junto a más versiones (chocolate negro y chocolate blanco) en febrero 2026
+- En todas las marcas se eligió una versión clásica lo más similar posible a la versión Dubai, manteniendo misma marca y packaging, dentro de estos parámetros opte por la versión más clásica de todas las posibles y que sea de leche esta versión clásica.
+- Hacendado tiene un lanzamiento en mayo 2025, pero es otra versión de chocolate blanco que la descontinuaron o la relanzaron cambiando el fabricante y salió en febrero del 2026. Tomé esta fecha como aproximación de detección de mercado ya que es el producto que hace referencia en mi dataset.
 - Hacendado no tiene una versión clásica de tableta de chocolate de leche en su marca Fussion. Para solucionar esto tomamos una versión de chocolate con leche relleno de galleta caramelizada, que formaba parte de los precios más bajos en la marca Fussion y tenía galleta caramelizada, un producto a destacar y bueno para comparar con una versión estilo Dubai.
-- Temptation no tiene clara ni próxima una fecha de lanzamiento y no hay aviso en ningún portal de internet como diario o revista ni tampoco de la marca de supermercados DIa, por lo tanto tome como fecha de avistaje en el mercado una nota que hacer referencia a un video de Tik tok publicado por la cuenta de Dia España donde visitan la fábrica donde se hacen los chocolates versión estilo Dubai de la marca Temptation que comercializa Dia. Es por esto que la fecha es en noviembre del 2025, la fecha más fiable que se conoce como aproximación a su lanzamiento, un avistaje.
+- Temptation no tiene clara ni próxima una fecha de lanzamiento y no hay aviso en ningún portal de internet como diario o revista ni tampoco de la marca de supermercados Dia, por lo tanto tome como fecha de avistaje en el mercado una nota que hace referencia a un video de Tik tok publicado por la cuenta de Dia España donde visitan la fábrica donde se hacen los chocolates versión estilo Dubai de la marca Temptation que comercializa Dia. Es por esto que la fecha es en noviembre del 2025, la fecha más fiable que se conoce como aproximación a su lanzamiento, un avistaje.
 - En cuanto al porcentaje de sus ingredientes posee pasta de pistacho con un  27% sobre el 50% que comprende el relleno sobre el total de la tableta de chocolate pero no fue tenido en cuenta porque no decía cuánto de esa pasta era de pistacho puro, solo tuve en cuenta la medida de pistacho tostado troceado de 4,5% sobre el 50% que comprende el relleno del total de la tableta de chocolate.
-- Como dije antes en su versión clásica fue tomada una que tenía en cuenta las mismas condiciones de chocolate de leche, marca y packaging, por eso se toma en cuenta una versión con almendras enteras, ya que su versión clásica de leche no tenía un envoltorio con las mismas cualidades que su estilo Dubai. Con esto intente asemejarnos y también aprovechar a comparar el fenómeno Dubai con una versión que poseía un fruto seco entero lo que lo hace que tampoco sea nada clásico y tenga un alto calibre, y ver el comportamiento de su comparativa entre los dos chocolates con estos frutos secos correspondiente a cada uno.
-- El Beato es una marca artesanal, para su versión clásica tome el chocolate con leche más puro, en sentido de sus componentes, posible y obviamente que sea de chocolate con leche.
-- En el caso de Cacao Sampaka, su envase no se parece a nada en la versión Dubai a la clásica de chocolate con leche,pero al tratarse de una marca artesanal lo tome como válido, pocos productos y con una versión y tratado especial para cada uno tiene o pareciera mostrar. En el caso de la versión dubai asimila una bolsa que posee el chocolate por dentro y la versión clásica es una caja rectangular como las versiones más normales de una tableta de chocolate en todas las marcas en general. Esto puede alterar el precio pero sabemos que es un factor de marca artesanal, lo cual tener en el dataset marcas artesanales aumentaría mucho más su riqueza en valor de datos.
-- Una vez obtuvimos nuestro conjunto de datos, lo sometimos a un proceso de limpieza donde se utilizó Python por medio de Google Colab, donde, se eliminaron y agregaron otras columnas, se editaron formatos, todo esto para un correcto análisis y lectura posterior de SQL en Bigquery.
+- Como dije antes en su versión clásica fue tomada una que tenía en cuenta las mismas condiciones de chocolate de leche, marca y packaging, por eso se toma en cuenta una versión con almendras enteras, ya que su versión clásica de leche no tenía un envoltorio con las mismas cualidades que su estilo Dubai. Con esto intenté asemejarlo y también aprovechar a comparar el fenómeno Dubai con una versión que poseía un fruto seco entero lo que lo hace que tampoco sea nada clásico y tenga un alto calibre, y ver el comportamiento de su comparativa entre los dos chocolates con estos frutos secos correspondiente a cada uno.
+- El Beato es una marca artesanal, para su versión clásica tomé el chocolate con leche más puro, en sentido de sus componentes, posible y obviamente que sea de chocolate con leche.
+- En el caso de Cacao Sampaka, su envase no se parece a nada en la versión Dubai a la clásica de chocolate con leche,pero al tratarse de una marca artesanal lo tomé como válido, pocos productos y con una versión y tratado especial para cada uno tiene o pareciera mostrar. En el caso de la versión dubai asimila una bolsa que posee el chocolate por dentro y la versión clásica es una caja rectangular como las versiones más normales de una tableta de chocolate en todas las marcas en general. Esto puede alterar el precio pero sabemos que es un factor de marca artesanal, lo cual tener en el dataset marcas artesanales aumentaría mucho más su riqueza en valor de datos.
+- Una vez obtenido el conjunto de datos, lo sometimos a un proceso de limpieza donde se utilizó Python por medio de Google Colab, donde, se eliminaron y agregaron otras columnas, se editaron formatos, todo esto para un correcto análisis y lectura posterior de SQL en Bigquery.
 
 Bloques de código utilizado: 
 ```python
@@ -137,7 +137,7 @@ CRITERIOS y PASOS A TENER EN CUENTA
 ![](images/INE-indice.png)
 
 - Luego de obtener los datos, aprovechando que estoy en Google Sheets, cree una columna nueva y utilizando la formula de GoogleFinance =SI(E2="USD"; C2 * INDICE(GOOGLEFINANCE("CURRENCY:USDEUR"; "price"; A2); 2; 2); C2) logre calcular todos los precios a valor Euro. Con esto realice un trabajo previo de ETL sobre Google Sheets. 
-- Para terminar, descargue el archivo como tipo .CSV y lo subí a un nuevo libro de trabajo en Google Colab donde por medio de Python se hizo un trabajo de ETL completo: cambiar comas por puntos en los precios, cambiar todas las medidas de peso a Kg, cambiar el formato de la fecha para que se entienda de manera correcta con SQL en Bigquery, eliminar la mayúscula en cada columna de cabecera para que se entienda de manera correcta con SQL en Bigquery, crear una nueva columna donde los precios sean por Kg y en Euro y por último eliminar las columnas innecesaria. Se cerró el trabajo descargando el archivo limpio como tipo .CSV para usar junto a los demás dataset en el análisis.
+- Para terminar, descargue el archivo como tipo .CSV y lo subí a un nuevo libro de trabajo en Google Colab donde por medio de Python se hizo un trabajo de ETL completo: cambiar comas por puntos en los precios, cambiar todas las medidas de peso a Kg, cambiar el formato de la fecha para que se entienda de manera correcta con SQL en Bigquery, eliminar la mayúscula en cada columna de cabecera para que se entienda de manera correcta con SQL en Bigquery, crear una nueva columna donde los precios sean por Kg y en Euro y por último eliminar las columnas innecesarias. Se cerró el trabajo descargando el archivo limpio como tipo .CSV para usar junto a los demás dataset en el análisis.
 
 Bloques de código utilizados:
 ```python
@@ -192,7 +192,7 @@ El trabajo de consulta que realizamos en SQL Bigquery:
 - Se integraron todas las fuentes mediante JOIN utilizando la fecha como clave principal.
 - Se filtraron los productos de versión clásica sin fecha para evitar distorsiones en el análisis.
 
-Lo que se busco fue crear una sola tabla con todos los tres dataset subidos a nuestro proyecto SQL en Bigquery, por esto fue que creamos el archivo de trends en formato mensual, ya que se podía integrar bien con los demás datos en el mismo formato, por esta razón nuestro dataset de trends semanales aun no lo usamos ni lo integramos en SQL.
+Lo que se buscó fue crear una sola tabla con todos los tres dataset subidos a nuestro proyecto SQL en Bigquery, por esto fue que creamos el archivo de trends en formato mensual, ya que se podía integrar bien con los demás datos en el mismo formato, por esta razón nuestro dataset de trends semanales aun no lo usamos ni lo integramos en SQL.
 
 Consulta realizada:
 ```sql
@@ -217,7 +217,7 @@ ORDER BY c.date;
 
 [Ver consulta completa](sql/tabla-final.sql)
 
-Se ejecuto la consulta SQL:
+Se ejecutó la consulta SQL:
 
 ![](images/sql-consulta.png)
 
@@ -244,7 +244,7 @@ Luego, vamos a cargar dos archivos más, nuestro trends semanal y el archivo cre
 
 ![](images/power-bi-tabla-marcas.png)
 
-El archivo semanal, como hemos explicado anteriormente, lo necesitamos ya que muestra la fuerza de tendencia de una manera más detallada y con mayor granularidad que el archivo en formato mensual. El archivo denominado “Mercadp_Chocolate_Dubai_Limpio” lo necesitamos nuevamente ya que como sabemos contiene las 5 marcas de tabletas de chocolate Dubai que están en el archivo SQL, pero también contiene la comparativa de su misma marca pero una versión de tableta clásica. Estas quedaron fuera de la tabla final hecha en SQL ya que por un tema de estructura se eligió no subirlas al no poseer una fecha de referencia, en cambio, se optó por subirlas como otra tabla a Power BI Desktop.
+El archivo semanal, como hemos explicado anteriormente, lo necesitamos ya que muestra la fuerza de tendencia de una manera más detallada y con mayor granularidad que el archivo en formato mensual. El archivo denominado “Mercado_Chocolate_Dubai_Limpio” lo necesitamos nuevamente ya que como sabemos contiene las 5 marcas de tabletas de chocolate Dubai que están en el archivo SQL, pero también contiene la comparativa de su misma marca pero una versión de tableta clásica. Estas quedaron fuera de la tabla final hecha en SQL ya que por un tema de estructura se eligió no subirlas al no poseer una fecha de referencia, en cambio, se optó por subirlas como otra tabla a Power BI Desktop.
 
 ##### MODELADO
 
@@ -413,9 +413,9 @@ Cabe recalcar que durante la investigación se observaron distintos productos, l
 
 ### VISIÓN DE MEJORAS
 Al concluir el proyecto me gustaría agregar un auto feedback o visión de mejoras. Mi intención no es cambiar el proyecto sino pensar cómo se podría mejorar en todo su desarrollo, es por eso que dejo algunos puntos claves a continuación.
-- Mejora de la parte técnica, hablamos de una herramienta que permite simular cambios en precios de productos de materia prima para ver y analizar cómo impacta en el producto final. Esto abre un abanico de posibilidades y requiere reunir más información para analizar otros puntos de vista.
+- Mejora de la parte técnica, hablamos de una herramienta que permite simular cambios en precios de productos de materia prima para ver y determinar cómo impacta en el producto final. Esto abre un abanico de posibilidades y requiere reunir más información para analizar otros puntos de vista.
 - Mejora en el flujo de trabajo, me refiero a la automatización de tareas sin descargar y cargar tantos archivos tipo .CSV en distintas plataformas o herramientas y que el flujo de trabajo sea más dinámico y automatizado.
-- Mejora en la metodología de trabajo, esto es aplicable al marco de trabajo. Compaginar mis habilidades técnicas con las de Scrum master y operar bajo un marco Agile para desarrollar en tiempo y forma el proyecto, tomando las precauciones necesarias, desarrollando sprint durante el tiempo, establecer objetivos y metas alcanzables y evaluar el proceso. Estamos hablando de cómo potenciar las habilidades de uno mismo y sacarle el máximo rendimiento posible bajo un entorno aplicable y funcional, donde permite entregar un producto a un cliente de forma satisfactoria y trabajar de una forma ordenada y prolija en un marco de contención medido y accionable.
+- Mejora en la metodología de trabajo, esto es aplicable al marco de trabajo. Compaginar mis habilidades técnicas con las de Scrum Master y operar bajo un marco Agile para desarrollar en tiempo y forma el proyecto, tomando las precauciones necesarias, desarrollando sprint durante el tiempo, establecer objetivos y metas alcanzables y evaluar el proceso. Estamos hablando de cómo potenciar las habilidades de uno mismo y sacarle el máximo rendimiento posible bajo un entorno aplicable y funcional, donde permite entregar un producto a un cliente de forma satisfactoria y trabajar de una forma ordenada y prolija en un marco de contención medido y accionable.
 
 ### HERRAMIENTAS UTILIZADAS
 Las herramientas utilizadas para desarrollar este trabajo fueron:
